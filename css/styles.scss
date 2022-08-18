@@ -1,0 +1,110 @@
+@use "./utility/variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+    background-color: $Lightgrayishcyan;
+    font-weight: 700;
+    // text-align: center;
+    // height: 100vh;
+    .logo{
+        padding-top:5em ;
+    }
+
+    .main-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+        gap: 1em;
+
+        .calculator-app-main {
+            display: flex;
+            gap: 3em;
+            background-color: $White;
+            padding: 1.5em;
+            width: fit-content;
+            box-shadow: 1px 1px 3px 5px $White;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: 50vw;
+
+            .calculator-app-main-left {
+                width: 50%;
+                label{
+                    color:$Grayishcyan;
+                }
+                input{
+                    padding: .7em;
+                    background-color: $Lightgrayishcyan;
+                    border:none;
+                    width:100%;
+                    border-radius:5px;
+                    margin: 1em 0em;
+
+                }
+                .dicount-buttons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    // justify-content: center;
+                    align-items: center;
+                    gap: .9em;
+                    padding: 1em 0em;
+                    #custom-button{
+                        flex: 1;
+                        padding: 1em;
+                        font-weight: 700;
+                        border: none;
+                    
+                    }
+
+                    button {
+                        flex: 1;
+                        background-color: $Verydarkcyan;
+                        color: $White;
+                        padding: 1em 1.5em;
+                        border-radius: 5px;
+                        font-weight: 700;
+                        cursor: pointer;
+                        border:none;
+                        // font-size: 1.1rem;
+                        &:hover{
+                            background-color: $Strongcyan;
+                        }
+                    }
+                }
+            }
+
+            .calculator-app-main-right {
+                background-color: $Verydarkcyan;
+                padding: 1em;
+                width: 50%;
+                border-radius: 5px;
+                label{
+                    color:$White;
+                }
+                p{
+                    color:$Strongcyan;
+                    span{
+                        font-size: 2.5rem;
+                    }
+                    
+                }
+
+                .div-flex {
+                    display: flex;
+                    // justify-content: space-between;
+                    align-items: center;
+                    gap: 3em;
+                }
+                button{
+                    width: 100%;
+                    padding: .7em 1.1em;
+                    background-color: $Strongcyan;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
