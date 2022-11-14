@@ -87,7 +87,10 @@ body .main-part .calculator-app-main .calculator-app-main-right button {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (max-width: 864px) {
+  body .main-part {
+    margin: 0 1em;
+  }
   body .main-part .calculator-app-main {
     display: flex;
     flex-direction: column;

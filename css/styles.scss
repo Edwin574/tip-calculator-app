@@ -121,11 +121,11 @@ body {
     }
 }
 
-@media screen and (max-width:614px) {
+@media screen and (max-width:864px) {
     body {
 
         .main-part {
-
+            margin: 0 1em;
 
             .calculator-app-main {
                 display: flex;
